@@ -105,3 +105,4 @@ dmypy.json
 **/_test*
 
 minikube.log
+init_python_environment.log
