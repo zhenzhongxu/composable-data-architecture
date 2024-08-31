@@ -1,1 +1,2 @@
-datafusion
+ibis-framework
+datafusion>=40.1.0
