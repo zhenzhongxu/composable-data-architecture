@@ -23,28 +23,15 @@
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     }
-    // "ghcr.io/gvatsal60/dev-container-features/pre-commit:1": {},
-    // "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
-    // "ghcr.io/devcontainers/features/python:1": {
-    //   "installTools": true,
-    //   "version": "3.12"
-    // },
   },
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
         "ms-toolsai.jupyter"
       ],
-      "settings": {
-        "python.linting.flake8Enabled": true,
-        "python.linting.enabled": true,
-        "python.linting.flake8Args": [
-          "--max-line-length=88"
-        ]
-      }
+      "settings": {}
     }
   }
 }

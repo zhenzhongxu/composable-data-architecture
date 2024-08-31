@@ -41,4 +41,6 @@ else
   echo "Added line to activate $ENV_NAME in ~/.zshrc"
   echo "source /opt/conda/bin/activate $ENV_NAME" >> ~/.bashrc
   echo "Added line to activate $ENV_NAME in ~/.bashrc"
+
+  echo "init_python_environment.sh completed..."
 fi
