@@ -1,0 +1,2 @@
+# 40.1.0 is not available on conda forge yet, hence installing from pip
+datafusion==40.1.0

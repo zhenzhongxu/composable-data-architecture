@@ -1,0 +1,4 @@
+python==3.12
+ibis-framework==9.3.0
+ibis-substrait==4.0.1
+ipykernel
