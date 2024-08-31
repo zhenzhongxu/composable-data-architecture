@@ -16,7 +16,7 @@
   "postCreateCommand": "bash .devcontainer/post_create.sh",
 
   // Use 'postStartCommand' to run commands after the container is created like starting minikube.
-  // "postStartCommand": "nohup bash -c 'minikube start &' > minikube.log 2>&1",
+  "postStartCommand": "bash .devcontainer/post_start.sh",
 
   // Use "root" to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   "remoteUser": "vscode",
@@ -25,9 +25,9 @@
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
     "ghcr.io/devcontainers/features/conda:1": {},
-    "ghcr.io/gvatsal60/dev-container-features/pre-commit:1": {},
-    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
-    "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
+    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
+    // "ghcr.io/gvatsal60/dev-container-features/pre-commit:1": {},
+    // "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
     // "ghcr.io/devcontainers/features/python:1": {
     //   "installTools": true,
     //   "version": "3.12"
