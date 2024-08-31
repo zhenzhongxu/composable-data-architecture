@@ -2,30 +2,24 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/kubernetes-helm-minikube
 {
   "name": "Composable Data Arch Dev Container",
-
   "build": {
     // Path is relative to the devcontainer.json file.
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [],
-
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "bash .devcontainer/post_create.sh",
-
   // Use 'postStartCommand' to run commands after the container is created like starting minikube.
   "postStartCommand": "bash .devcontainer/post_start.sh",
-
   // Use "root" to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   "remoteUser": "vscode",
-
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
     "ghcr.io/devcontainers/features/conda:1": {},
-    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
+    // "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     }
@@ -36,7 +30,21 @@
     //   "version": "3.12"
     // },
   },
-
   // Configure tool-specific properties.
-  "customizations": {}
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.linting.flake8Enabled": true,
+        "python.linting.enabled": true,
+        "python.linting.flake8Args": [
+          "--max-line-length=88"
+        ]
+      }
+    }
+  }
 }

@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # install k9s
-brew install k9s
+# brew install k9s
 
 # make sure minikube has permission to user directory
 sudo chown -R vscode:vscode /home/vscode/.minikube
