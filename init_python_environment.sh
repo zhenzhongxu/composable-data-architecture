@@ -36,7 +36,7 @@ else
   pip install -r requirements-pip.txt
   python -m ipykernel install --user --name $ENV_NAME --display-name "Conda($ENV_NAME)"
 
-  # Comment out below lines if you don't want conda env to be activated upon log into shell
+  # Comment out below lines if you don't want conda env to be activated upon shell login
   echo "source /opt/conda/bin/activate $ENV_NAME" >> ~/.zshrc
   echo "Added line to activate $ENV_NAME in ~/.zshrc"
   echo "source /opt/conda/bin/activate $ENV_NAME" >> ~/.bashrc
