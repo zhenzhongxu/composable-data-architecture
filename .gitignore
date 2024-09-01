@@ -104,5 +104,6 @@ dmypy.json
 # Local testing files and directories
 **/_test*
 
-minikube.log
-init_python_environment.log
+# ignore all in logs folder except README.md
+logs/*
+!logs/README.md
